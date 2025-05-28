@@ -4,10 +4,12 @@
  */
 package modelo;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.io.*;
 
 /**
  *
@@ -77,7 +79,7 @@ public class Cancion implements Comparable<Cancion> {
                 for (String h:historial){
                     listaHistorial.add(Integer.valueOf(h));
                 }
-                Cancion c = new Cancion(datos[0], datos[1], datos[2], Integer.valueOf(datos[3]), Integer.valueOf(datos[4]), Integer.valueOf(datos[5]),  listaHistorial);
+                Cancion c = new Cancion(datos[1], datos[0], datos[2], Integer.valueOf(datos[3]), Integer.valueOf(datos[4]), Integer.valueOf(datos[5]),  listaHistorial);
                 lista.add(c);
             }
         } catch (FileNotFoundException ex) {
