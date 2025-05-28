@@ -40,7 +40,7 @@
    <top>
       <Label text="RadioXYZ Top 10" BorderPane.alignment="CENTER">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="Arial" size="30.0" />
          </font>
       </Label>
    </top>
